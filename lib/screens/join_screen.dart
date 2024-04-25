@@ -21,6 +21,8 @@ class _JoinScreenState extends State<JoinScreen> {
 
     // listen for incoming video call
     SignallingService.instance.socket!.on("newCall", (data) {
+      print("Incoming call");
+      print(data);
       if (mounted) {
         // set SDP Offer of incoming call
         setState(() => incomingSDPOffer = data);

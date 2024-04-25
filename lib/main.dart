@@ -16,8 +16,8 @@ class VideoCallApp extends StatelessWidget {
   final String websocketUrl = "https://webrtc.yourmentra.com";
 
   // generate callerID of local user
-  final String selfCallerID =
-      Random().nextInt(999999).toString().padLeft(6, '0');
+  final String selfCallerID = 
+  Random().nextInt(999999).toString().padLeft(6, '0');
 
   @override
   Widget build(BuildContext context) {

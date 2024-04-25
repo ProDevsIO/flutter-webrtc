@@ -19,6 +19,7 @@ class SignallingService {
     // listen onConnect event
     socket!.onConnect((data) {
       print("Socket connected !!");
+      print(data);
     });
 
     // listen onConnectError event
